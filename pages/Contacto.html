@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clínica veterinaria VetMex dedicada al cuidado y bienestar de perros y gatos, con servicios veterinarios de calidad a precios accesibles.">
+    <meta name="keywords" content="veterinaria, mascotas, perros, gatos, consulta veterinaria, vacunación, cuidado animal, VetMex">
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Contacto | VetMex</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+
+  <header>
+    <img class="headerImg" src="/assets/imagenes/Banner.jpg" alt="Banner decorativo mostrando una imagen tomada por la Veterinaria de manera promocional">
+    
+    <!-- BootStrap Nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">VetMex</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/Contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/Galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/Nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/Sponsors.html">Sponsors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-fluid px-3 px-md-5">
+    <section class="Hero" data-aos="zoom-out-left" data-aos-duration="1500">
+      <h1 data-aos="zoom-in-left">Servicio completo a un bajo costo, VetMex.</h1>
+      <img class="CatoHero" data-aos="zoom-out-left" src="/assets/imagenes/Hero-small.jpg" alt="Imagen de un perro y un gato juntos, representando la atención veterinaria para ambas especies">
+      <p class="p-Main">Para más información, haz click <a href="/pages/Contacto.html">aquí</a></p>
+    </section>
+
+    <section class="contacto" data-aos="zoom-in">
+      <form class="formContacto" method="post">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="boton boton-primary btn btn-primary">Enviar</button>
+      </form>
+
+      <aside class="infoContacto">
+        <h2>Información de Contacto</h2>
+        <p>Si tienes alguna pregunta o inquietud, no dudes en ponerte en contacto con nosotros a través del formulario o puedes llamarnos al siguiente número o escribirnos a nuestro correo electrónico.</p>
+        <p class="contactoDato"><strong>Teléfono:</strong> +52 274-101-3100</p>
+        <p class="contactoDato"><strong>Email:</strong> contacto@vetmex.com</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer data-aos="fade-down-left">
+    <ul class="ul-footer">
+      <li><a href="/index.html">VetMex</a></li>
+      <li><a href="/pages/Contacto.html">Contacto</a></li>
+      <li><a href="/pages/Galeria.html">Galeria</a></li>
+      <li><a href="/pages/Nosotros.html">Nosotros</a></li>
+      <li><a href="/pages/Sponsors.html">Sponsors</a></li>
+    </ul>
+    <p class="foot">&copy; 2027 VetMex. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.Hero {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+
+.Servicios {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+body .Servicios {
+  background-color: rgb(255, 235, 205);
+  box-shadow: 0 2px 400px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+}
+.navbar .nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: var(--bs-primary);
+}
+
+.Hero {
+  background-image: url("/assets/imagenes/Hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.Hero h1 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.Hero p {
+  color: rgb(236, 236, 236);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.p-Main {
+  margin-right: 2rem;
+}
+
+.Presentacion {
+  color: rgb(236, 236, 236);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.Servicios {
+  color: rgb(236, 236, 236);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar, .headerImg {
+  animation: fadeInUp 0.8s ease-out 1s forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.foot {
+  background-color: black;
+}
+
+footer {
+  background-color: black;
+}
+
+/*# sourceMappingURL=main.css.map */

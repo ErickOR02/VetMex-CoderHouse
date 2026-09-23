@@ -1,0 +1,20 @@
+@use "mixins";
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    @include mixins.shadowText(white, 2px 2px 4px rgba(0, 0, 0, 0.5));
+
+    .nav-link {
+        font-weight: 500;
+        transition: color 0.0s ease;
+
+        &:hover {
+            color: var(--bs-primary);
+        }
+    }
+}
+
+.navbar, .headerImg {
+    animation: fadeInUp 0.8s ease-out 0s forwards; 
+}

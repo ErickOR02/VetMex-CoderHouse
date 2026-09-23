@@ -1,0 +1,35 @@
+$header-height: 280px;
+
+body {
+    background-color: blanchedalmond;
+
+    .Servicios {
+        background-color: rgb(255, 235, 205); 
+        box-shadow: 0 2px 400px rgba(0, 0, 0, 0.1);
+    }
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  .headerImg {
+    width: 100%;
+    height: $header-height;
+    object-fit: cover; 
+    display: block;   
+  }
+}
+
+
+.Hero {
+  .CatoHero {
+    width: 100%;       
+    max-width: 450px;  
+    height: 380px;     
+    object-fit: cover; 
+    border-radius: 12px; 
+  }
+}

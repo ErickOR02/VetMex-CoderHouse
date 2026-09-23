@@ -1,0 +1,14 @@
+@use "variables";
+@use "mixins";
+
+li {
+        &:hover, &:focus {
+            color: rgb(242, 242, 242);
+        }
+
+    }
+
+    .p-footer, .foot, .ul-footer {
+        @extend %heroMain;
+        @include mixins.shadowText(rgb(236, 236, 236), 1px 1px 2px rgba(0, 0, 0, 0.5));
+    }

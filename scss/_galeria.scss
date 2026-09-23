@@ -1,0 +1,143 @@
+@use "mixins";
+
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+header {
+  .headerImg {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+
+    
+    @media (min-width: 768px) {
+      height: 280px;
+    }
+  }
+}
+
+
+.Hero {
+  text-align: center;
+  padding: 30px 15px;
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .CatoHero {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 12px;
+    margin: 0 auto 15px;
+    display: block;
+
+    @media (min-width: 768px) {
+      max-width: 450px;
+    }
+  }
+
+  .p-Main {
+    font-size: 1.1rem;
+  }
+}
+
+
+.textoGaleria {
+  padding: 20px 10px;
+  text-align: center;
+  @include mixins.shadowText(white, 2px 2px 4px rgba(0, 0, 0, 0.5));
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+
+$slider-max-width: 800px; 
+$border-radius: 12px;
+$shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+.sliderGaleria {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto 40px;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: $shadow;
+
+  @media (min-width: 768px) {
+    max-width: $slider-max-width;
+  }
+
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    scrollbar-width: none;
+
+    img {
+      width: 100%;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+      object-fit: cover;
+      aspect-ratio: 16 / 9;
+    }
+  }
+}
+
+footer {
+  padding: 30px 15px;
+  text-align: center;
+
+  .ul-footer {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+
+    li a {
+      text-decoration: none;
+      font-size: 1rem;
+    }
+  }
+
+  .foot {
+    font-size: 0.9rem;
+  }
+}

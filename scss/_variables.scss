@@ -1,0 +1,12 @@
+%heroMain{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+
+%heroServicios {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    padding: 2rem;
+}
